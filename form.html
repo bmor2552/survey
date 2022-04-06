@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One Piece Survey</title>
+    <title>Hero or Villain Survey</title>
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <!--Header-->
         <div class="container">
             <header class="header">
-                <h1 id="title">What Anime Character Are You?</h1>
+                <h1 id="title">What Character Are You?</h1>
                 <p id="description">
-                    We have all watched anime at least once in our lives, and in some cases reenacted our favorite fight scene. <br> 
+                    We have all watched a superhero movie at least once in our lives, and in some cases reenacted our favorite fight scene. <br> 
                     Admit it, inside us all is a super hero, and for some a super villain waiting to get out! <br>
                     Take the survey to find out who you are, <strong><em>villain</em></strong> or <strong><em>super hero</em></strong>. 
                 </p>
@@ -32,16 +32,33 @@
                 <input type="email" name="email" id="email" class="formControl" 
                 placeholder="Enter Your Email" required>
             </div>
-            <!--Characteristics Section-->
+            <!--Question Section-->
+            <!--Dropdown-->
             <div class="form-group">
-                <label for="name">Favorite Color</label>
-                <input type="text" name="color" id="color" class="formControl" 
-                placeholder="Red" required>
-            </div>
+                <p id="quest">What is your favorite color? </p>
+                <select name="color" id="dropdown" class="formControl" required>
+                    <option value=" " disabled selected>Select your favorite color</option>
+                    <option value="red">Red</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="blue">Blue</option>
+                    <option value="green">Green</option>
+                    <option value="purple">Purple</option>
+                </select>
+                </div>
 
-            
-            <!---->
-            <!---->
+            <!--Multiple Choice-->
+                <div class="form-group">
+                    <p id="quest">What is your favorite soda to drink?</p>
+                    <label for="">
+                        <input type="radio" name= "soda" value="coke" class="inputRadio" checked>Coke
+                        <input type="radio" name= "soda" value="sprite" class="inputRadio">Sprite
+                        <input type="radio" name= "soda" value="mountain-due" class="inputRadio">Mountain Due
+                        <input type="radio" name= "soda" value="fanta" class="inputRadio">Fanta
+                        <input type="radio" name= "soda" value="ginger-ale" class="inputRadio">Ginger Ale
+                        <input type="radio" name= "soda" value="root-beer" class="inputRadio">Root Beer
+                    </label> 
+
+            <!--Checkbox Section-->
             <!---->
             <!---->
         </form>
