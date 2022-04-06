@@ -1,8 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
 
-*{
+
+
+*, *::before, *::after{
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
 }
 
+body{
+    font-family: Comic, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    margin: 0%;
+
+}
+
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+    width: 100%;
+    background-image: url(/joker.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#title{
+    color: #359d35;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+h1{
+    font-weight: 400;
+    line-height: 1.3rem;
+
+}
