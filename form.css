@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
 
-
+:root{
+    --primary:rgba(53, 157, 115, 0.8);
+    --secondary:rgba(112, 71, 118, 0.8);
+}
 
 *, *::before, *::after{
     box-sizing: border-box;
@@ -8,7 +11,7 @@
 
 body{
     font-family: Comic, sans-serif;
-    font-size: 1rem;
+    font-size: 5rem;
     font-weight: 400;
     color: white;
     margin: 0%;
@@ -23,20 +26,46 @@ body::before{
     height: 100%;
     z-index: -1;
     width: 100%;
-    background-image: url(/joker.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(215deg, var(--primary), var(--secondary)),
+                url('/joker.jpeg') center center/cover;
+ 
 }
 
 #title{
-    color: #359d35;
+    color: white;
     font-weight: bolder;
     font-size: 4rem;
 }
 
 h1{
     font-weight: 400;
-    line-height: 1.3rem;
+    line-height: 1.130rem;
+    margin-bottom: 0.5rem;
 
+}
+
+p{
+    font-size: 1.130rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+label{
+    display: flex;
+    align-items: center;
+    font-size: 1.130rem;
+    margin-bottom: 0.5rem;
+}
+
+input, button, select{
+    margin: 0%;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.container{
+    width: 100%;
+    
 }
