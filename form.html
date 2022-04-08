@@ -18,30 +18,30 @@
                     Take the survey to find out who you are, <strong><em>villain</em></strong> or <strong><em>super hero</em></strong>. 
                 </p>
             </header>
-        </div>
         <form action="" id="survey-form">
             
             <!--Text Section-->
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="formControl" 
-                placeholder="Enter Your Name" required>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter Your Name" required>
             </div>
+
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" class="formControl" 
                 placeholder="Enter Your Email" required>
             </div>
+
             <!--Question Section-->
             <!--Dropdown-->
             <div class="form-group">
                 <p id="quest">What is your favorite color? </p>
-                <select name="color" id="dropdown" class="formControl" required>
+                <select name="color" required id="dropdown" class="formControl" >
                     <option value=" " disabled selected>Select your favorite color</option>
-                    <option value="red">Red</option>
-                    <option value="yellow">Yellow</option>
-                    <option value="blue">Blue</option>
-                    <option value="green">Green</option>
+                    <option value="red">Red</option><br>
+                    <option value="yellow">Yellow</option><br>
+                    <option value="blue">Blue</option><br>
+                    <option value="green">Green</option><br>
                     <option value="purple">Purple</option>
                 </select>
                 </div>
@@ -50,34 +50,72 @@
                 <div class="form-group">
                     <p id="quest">What is your favorite soda to drink?</p>
                     <label for="">
-                        <input type="radio" name= "soda" value="coke" class="inputRadio" checked>Coke
+                        <input type="radio" name= "soda" value="coke" class="inputRadio" checked>Coke 
+                    </label> 
+                    
+                    <label for="">
                         <input type="radio" name= "soda" value="sprite" class="inputRadio">Sprite
+                    </label> 
+                    
+                    <label for="">
                         <input type="radio" name= "soda" value="mountain-due" class="inputRadio">Mountain Due
+                    </label> 
+                        
+                    <label for="">
                         <input type="radio" name= "soda" value="fanta" class="inputRadio">Fanta
+                    </label> 
+
+                    <label for="">
                         <input type="radio" name= "soda" value="ginger-ale" class="inputRadio">Ginger Ale
+                    </label> 
+
+                    <label for="">
                         <input type="radio" name= "soda" value="root-beer" class="inputRadio">Root Beer
+                    </label> 
+                    
+                        <label for="">
                         <input type="radio" name= "soda" value="other" class="inputRadio">Other
                     </label> 
 
             <!--Checkbox Section-->
             <div class="form-group">
                 <p id="quest">What is your favorite food?</p>
+                
                 <label for="">
                     <input type="checkbox" name="food" class="checkbox" value="cheese-burger"> Cheese Burger
+                </label>
+                
+                <label for="">
                     <input type="checkbox" name="food" class="checkbox" value="philly-cheese"> Philly Cheese Steak
+                </label>
+                
+                <label for="">
                     <input type="checkbox" name="food" class="checkbox" value="hotdog"> Hotdog
+                </label>
+                
+                <label for="">
                     <input type="checkbox" name="food" class="checkbox" value="cheese-pizza"> Cheese Pizza
-                    <input type="checkbox" name="food" class="checkbox" value="spicy-chicken"> Spicy Chicken Sandwich 
-                    <input type="checkbox" name="food" class="checkbox" value="grilled-cheese"> Grilled Cheese Sandwich 
-                    <input type="checkbox" name="food" class="checkbox" value="other"> Other
                 </label>
             
+                <label for="">
+                    <input type="checkbox" name="food" class="checkbox" value="spicy-chicken"> Spicy Chicken Sandwich 
+                </label>
+                
+                <label for="">
+                    <input type="checkbox" name="food" class="checkbox" value="grilled-cheese"> Grilled Cheese Sandwich 
+                </label>
+                    
+                <label for="">
+                    <input type="checkbox" name="food" class="checkbox" value="other"> Other
+                </label>
+            </div>
+
             <!--Button Section-->
             <div class="form-group">
                 <button type="submit" id="submit" class="btn">Submit</button>
 
             </div>
-            <!---->
         </form>
+    </div>
 </body>
 </html>
