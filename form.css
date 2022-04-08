@@ -34,7 +34,7 @@ body::before{
     z-index: -1;
     width: 100%;
     background: linear-gradient(215deg, var(--primary), var(--secondary)),
-                url('/joker.jpeg') center center/cover;
+                url('joker.jpeg') center center/cover;
  
 }
 
